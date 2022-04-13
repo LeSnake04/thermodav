@@ -1,0 +1,34 @@
+# Delay between refreshes in minutes
+delay = 15
+
+### Configure caldav properties
+[dav]
+# Url to caldav server
+server = "caldav.example.com"
+# Caldav user
+#
+# Its advised to create seperate user for mqtt automation.
+user = "user"
+# Password in plain text
+password = "pa$$word1"
+
+### Configure mqtt broker
+[mqtt]
+# url to broker server
+server = "broker.example.com"
+
+### All thermostats being automated
+# Syntax:
+# [[thermo]]
+# topic = "thermo_mqtt_living_room"
+# calname = "thermo_cal_living_room"
+
+[[thermo]]
+topic = "thermo_mqtt_living_room"
+calname = "thermo_cal_living_room"
+
+[[thermo]]
+topic = "thermo_mqtt_bedroom"
+calname = "thermo_cal_bedroom"
+
+# You can add as many thermostats as you want.
