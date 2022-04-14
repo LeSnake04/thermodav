@@ -412,6 +412,8 @@ dependencies = [
  "rumqttc",
  "serde",
  "toml",
+ "ureq",
+ "url",
 ]
 
 [[package]]

@@ -1,0 +1,34 @@
+## Delay between refreshes in minutes
+delay = 15
+
+### Configure caldav properties
+[dav]
+## Url to caldav server
+server = "https://caldav.example.com"
+## Caldav user
+#
+# Note: If you host your own caldav server (e.g. Nextcloud Server) its advised to create a seperate user for mqtt automation and give the users who use them acess to the calandar in order to to limit the risk of a data breach.
+user = "user"
+## Password in plain text
+password = "pa$$word1"
+
+### Configure the mqtt broker
+[mqtt]
+## Url to broker server
+server = "broker.example.com"
+
+### All thermostats being automated
+## Syntax:
+# [[thermo]]
+# topic = "thermo_mqtt_living_room"
+# calname = "thermo_cal_living_room"
+
+[[thermo]]
+topic = "thermo_mqtt_living_room"
+calname = "thermo_cal_living_room"
+
+[[thermo]]
+topic = "thermo_mqtt_bedroom"
+calname = "thermo_cal_bedroom"
+
+## You can add as many thermostats as you want.
