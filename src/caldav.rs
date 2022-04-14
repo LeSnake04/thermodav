@@ -58,6 +58,7 @@ impl CalDav {
 		));
 
 		let events: Vec<Event> = get_events(
+			// FIXME 400: Bad Request
 			self.agent.clone(),
 			&self.config.user,
 			&self.config.password,
